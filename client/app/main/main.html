@@ -2,11 +2,18 @@
 
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>'Allo, 'Allo!</h1>
+
+    <input type="text" ng-model="text"/>
     <p class="lead">Kick-start your next web app with Angular Fullstack</p>
     <img src="assets/images/yeoman.png" alt="I'm Yeoman">
   </div>
 </header>
+
+<div ng-repeat='t in test'>
+<a href="#">{{t}}</a>
+</div>
+
+
 
 <div class="container">
   <div class="row">

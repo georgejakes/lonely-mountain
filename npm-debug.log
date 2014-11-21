@@ -1,0 +1,246 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cucumber',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'cucumber', null ]
+6 verbose cache add name=undefined spec="cucumber" args=["cucumber",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'cucumber',
+7 verbose parsed url   path: 'cucumber',
+7 verbose parsed url   href: 'cucumber' }
+8 silly lockFile 868d0992-cucumber cucumber
+9 verbose lock cucumber /home/sv/.npm/868d0992-cucumber.lock
+10 silly lockFile 868d0992-cucumber cucumber
+11 silly lockFile 868d0992-cucumber cucumber
+12 verbose addNamed [ 'cucumber', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile fc6f15d3-cucumber cucumber@
+15 verbose lock cucumber@ /home/sv/.npm/fc6f15d3-cucumber.lock
+16 silly addNameRange { name: 'cucumber', range: '*', hasData: false }
+17 verbose request where is /cucumber
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 1b620f77dff2373a
+20 verbose url raw /cucumber
+21 verbose url resolving [ 'https://registry.npmjs.org/', './cucumber' ]
+22 verbose url resolved https://registry.npmjs.org/cucumber
+23 verbose request where is https://registry.npmjs.org/cucumber
+24 info trying registry request attempt 1 at 18:16:02
+25 http GET https://registry.npmjs.org/cucumber
+26 http 200 https://registry.npmjs.org/cucumber
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Fri, 14 Nov 2014 12:46:03 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"3TINNWK207EECH5C6MBU5GTMR"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '92574',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '1',
+27 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1415969162.723064,VS0,VE1062',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'cucumber', range: '*', hasData: true }
+29 silly addNameRange versions [ 'cucumber',
+29 silly addNameRange   [ '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.5',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '0.2.11',
+29 silly addNameRange     '0.2.12',
+29 silly addNameRange     '0.2.13',
+29 silly addNameRange     '0.2.14',
+29 silly addNameRange     '0.2.15',
+29 silly addNameRange     '0.2.16',
+29 silly addNameRange     '0.2.17',
+29 silly addNameRange     '0.2.18',
+29 silly addNameRange     '0.2.19',
+29 silly addNameRange     '0.2.20',
+29 silly addNameRange     '0.2.21',
+29 silly addNameRange     '0.2.22',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.3.3',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.4.3',
+29 silly addNameRange     '0.4.4' ] ]
+30 verbose addNamed [ 'cucumber', '0.4.4' ]
+31 verbose addNamed [ '0.4.4', '0.4.4' ]
+32 silly lockFile ed6704ad-cucumber-0-4-4 cucumber@0.4.4
+33 verbose lock cucumber@0.4.4 /home/sv/.npm/ed6704ad-cucumber-0-4-4.lock
+34 silly lockFile ea55e5a4--org-cucumber-cucumber-0-4-4-tgz https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+35 verbose lock https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz /home/sv/.npm/ea55e5a4--org-cucumber-cucumber-0-4-4-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz',
+36 verbose addRemoteTarball   '3caa9dfac565d3ad6bb2eaf21b9dff075b6454d1' ]
+37 info retry fetch attempt 1 at 18:16:03
+38 verbose fetch to= /tmp/npm-30205-U4E_0Fnj/registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+39 http GET https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+40 http 200 https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+41 silly lockFile ea55e5a4--org-cucumber-cucumber-0-4-4-tgz https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+42 silly lockFile ea55e5a4--org-cucumber-cucumber-0-4-4-tgz https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz
+43 silly lockFile ed6704ad-cucumber-0-4-4 cucumber@0.4.4
+44 silly lockFile ed6704ad-cucumber-0-4-4 cucumber@0.4.4
+45 silly lockFile fc6f15d3-cucumber cucumber@
+46 silly lockFile fc6f15d3-cucumber cucumber@
+47 silly resolved [ { name: 'cucumber',
+47 silly resolved     description: 'The official JavaScript implementation of Cucumber.',
+47 silly resolved     keywords: [ 'testing', 'bdd', 'cucumber', 'gherkin', 'tests' ],
+47 silly resolved     version: '0.4.4',
+47 silly resolved     homepage: 'http://github.com/cucumber/cucumber-js',
+47 silly resolved     author:
+47 silly resolved      { name: 'Julien Biezemans',
+47 silly resolved        email: 'jb@jbpros.com',
+47 silly resolved        url: 'http://jbpros.net' },
+47 silly resolved     contributors:
+47 silly resolved      [ [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object],
+47 silly resolved        [Object] ],
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git://github.com/cucumber/cucumber-js.git' },
+47 silly resolved     bugs:
+47 silly resolved      { url: 'http://github.com/cucumber/cucumber-js/issues',
+47 silly resolved        email: 'cukes@googlegroups.com' },
+47 silly resolved     directories: { lib: './lib' },
+47 silly resolved     main: './lib/cucumber',
+47 silly resolved     engines: { node: '0.8 || 0.10 || 0.11' },
+47 silly resolved     dependencies:
+47 silly resolved      { browserify: '5.11.1',
+47 silly resolved        'coffee-script': '1.8.0',
+47 silly resolved        'cucumber-html': '0.2.3',
+47 silly resolved        gherkin: '2.12.2',
+47 silly resolved        nopt: '3.0.1',
+47 silly resolved        pogo: '0.9.4',
+47 silly resolved        underscore: '1.7.0',
+47 silly resolved        'underscore.string': '2.3.3',
+47 silly resolved        walkdir: '0.0.7' },
+47 silly resolved     devDependencies:
+47 silly resolved      { connect: '3.2.0',
+47 silly resolved        'jasmine-node': '1.14.5',
+47 silly resolved        mkdirp: '0.3.5',
+47 silly resolved        rimraf: '2.2.8',
+47 silly resolved        'serve-static': '1.6.1',
+47 silly resolved        through: '2.3.4',
+47 silly resolved        uglifyify: '2.5.0' },
+47 silly resolved     scripts: { test: './bin/cucumber.js && jasmine-node spec' },
+47 silly resolved     bin:
+47 silly resolved      { 'cucumber.js': './bin/cucumber.js',
+47 silly resolved        'cucumber-js': './bin/cucumber.js' },
+47 silly resolved     licenses: [ [Object] ],
+47 silly resolved     optionalDependencies: {},
+47 silly resolved     gitHead: 'b58fdbe9031eec7ffc6419ca303da682ad39dc57',
+47 silly resolved     _id: 'cucumber@0.4.4',
+47 silly resolved     _shasum: '3caa9dfac565d3ad6bb2eaf21b9dff075b6454d1',
+47 silly resolved     _from: 'cucumber@',
+47 silly resolved     _npmVersion: '1.4.14',
+47 silly resolved     _npmUser: { name: 'jbpros', email: 'jb@jbpros.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '3caa9dfac565d3ad6bb2eaf21b9dff075b6454d1',
+47 silly resolved        tarball: 'http://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz' },
+47 silly resolved     _resolved: 'https://registry.npmjs.org/cucumber/-/cucumber-0.4.4.tgz' } ]
+48 info install cucumber@0.4.4 into /usr/lib
+49 info installOne cucumber@0.4.4
+50 verbose lib/node_modules/cucumber unbuild
+51 verbose tar unpack /home/sv/.npm/cucumber/0.4.4/package.tgz
+52 silly lockFile d31227c5-ar-usr-lib-node-modules-cucumber tar:///usr/lib/node_modules/cucumber
+53 verbose lock tar:///usr/lib/node_modules/cucumber /home/sv/.npm/d31227c5-ar-usr-lib-node-modules-cucumber.lock
+54 silly lockFile fbecd848-v-npm-cucumber-0-4-4-package-tgz tar:///home/sv/.npm/cucumber/0.4.4/package.tgz
+55 verbose lock tar:///home/sv/.npm/cucumber/0.4.4/package.tgz /home/sv/.npm/fbecd848-v-npm-cucumber-0-4-4-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/cucumber'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/cucumber']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/cucumber',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/cucumber',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/home/sv/softwares/node-v0.10.33-linux-x64/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/home/sv/softwares/node-v0.10.33-linux-x64/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:107:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.16.0-24-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "cucumber" "--save"
+61 error cwd /home/sv/projects/lonely-mountain
+62 error node -v v0.10.33
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/cucumber
+65 error fstream_path /usr/lib/node_modules/cucumber
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/cucumber'
+71 error fstream_stack /home/sv/softwares/node-v0.10.33-linux-x64/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /home/sv/softwares/node-v0.10.33-linux-x64/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:107:15)
+72 verbose exit [ 3, true ]

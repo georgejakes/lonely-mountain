@@ -7,6 +7,8 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Place = require('../api/place/place.model');
+var Room = require('../api/room/room.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -46,4 +48,59 @@ User.find({}).remove(function() {
       console.log('finished populating users');
     }
   );
+});
+Place.find({}).remove(function () {
+  Place.create({
+    name: "Kundanahalli Gat",
+    city: "Bangalore",
+    pincode: "560037",
+    location: [-10, -27],
+    active: true
+  },{
+    name: "Maathahalli Bridge",
+    city: "Bangalore",
+    pincode: "560037",
+    location: [-100, -28],
+    active: true
+  },{
+    name: "Trinity Circle",
+    city: "Bangalore",
+    pincode: "560001",
+    location: [-210, -27],
+    active: true
+  }, function () {
+    console.log('finished populating places');
+  });
+});
+Room.find({}).remove(function () {
+  Room.create({
+  name: "Sample 1",
+  ownerId: 123,
+  location:[10,-27],
+  ownership: "own",
+  beds : 1,
+  rent: 5000,
+  info: "Nothing",
+  active: true
+  },{
+  name: "Sample 2",
+  ownerId: 124,
+  location:[-100,-27],
+  ownership: "own",
+  beds : 1,
+  rent: 50000,
+  info: "Nothing",
+  active: true
+  },{
+  name: "Sample 3",
+  ownerId: 124,
+  location:[210,-27],
+  ownership: "own",
+  beds : 1,
+  rent: 5000,
+  info: "Nothing",
+  active: true
+  },function () {
+    console.log('finished populating rooms');
+  });
 });

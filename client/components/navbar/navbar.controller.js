@@ -5,6 +5,14 @@ angular.module('lmApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },
+    {
+      'title': 'Search',
+      'link': '/search'
+    },
+    {
+      'title': 'Admin',
+      'link': '/admin'
     }];
 
     $scope.isCollapsed = true;

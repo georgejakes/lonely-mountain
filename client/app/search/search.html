@@ -1,0 +1,17 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="panel">
+            <div class="col-md-2">Place</div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" ng-bind="query" class="typeahead form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" style="width:500px;height:500px;" id='map-canvas'></div>
+    </div>
+</div>

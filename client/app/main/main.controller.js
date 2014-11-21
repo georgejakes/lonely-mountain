@@ -9,6 +9,8 @@ angular.module('lmApp')
       socket.syncUpdates('thing', $scope.awesomeThings);
     });
 
+    $scope.test = [1,2,3];
+
     $scope.addThing = function() {
       if($scope.newThing === '') {
         return;
