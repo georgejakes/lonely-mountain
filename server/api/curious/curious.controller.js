@@ -5,7 +5,7 @@ var _ = require('lodash');
 var Curious = require('./curious.model');
 // Get a single thing
 exports.show = function(req, res) {
-    return res.send(404);
+    return res.send(200, "Curious");
 };
 
 exports.add = function(req, res) {
