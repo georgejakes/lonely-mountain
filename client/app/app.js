@@ -6,9 +6,14 @@ angular.module('lmApp', [
   'ngSanitize',
   'ngRoute',
   'btford.socket-io',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'uiGmapgoogle-maps'
 ])
-  .config(function ($routeProvider, $locationProvider, $httpProvider) {
+  .config(function ($routeProvider, $locationProvider, $httpProvider, uiGmapGoogleMapApiProvider) {
+    uiGmapGoogleMapApiProvider.configure({
+        v: '3.17',
+        libraries: 'weather,geometry,visualization'
+    });
     $routeProvider
       .otherwise({
         redirectTo: '/'

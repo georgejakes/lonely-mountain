@@ -1,14 +1,24 @@
 'use strict';
 
 angular.module('lmApp')
-  .controller('MainCtrl', function ($scope, $http, socket) {
+  .controller('MainCtrl', function ($scope, $http, socket, uiGmapGoogleMapApi) {
     $scope.awesomeThings = [];
-
+    uiGmapGoogleMapApi.then(function(maps){
+      $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+    });
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
       socket.syncUpdates('thing', $scope.awesomeThings);
     });
 
+    $scope.showMap = function() {
+      // animate and show map
+      $('#banner').animate({'opacity':0});
+    };
+    $scope.hideMap = function() {
+      // animate and hide map
+      $('#banner').animate({'opacity':1});
+    };
     $scope.addThing = function() {
       if($scope.newThing === '') {
         return;

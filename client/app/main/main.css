@@ -1,10 +1,20 @@
 .thing-form {
     margin: 20px 0;
+    top: 50%;
+    margin-top:240px;
+}
+button {
+ color:#FFFFFF;
+ z-index:3;
 }
 
 #banner {
     border-bottom: none;
     margin-top: -20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 #banner h1 {
@@ -27,4 +37,9 @@
     padding: 30px 0;
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
+}
+.angular-google-map-container { 
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }

@@ -8,12 +8,13 @@
 </header>
 
 <div class="container">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    
   <form class="thing-form">
-    <label>Find shared houses in your neighbourhood</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+    <p class="input-group row">
+      <input type="text" class="form-control" ng-mouseout="hideMap()" ng-mouseover="showMap()" placeholder="Add a new thing here." ng-model="newThing">
       <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+        <button type="submit" class="btn btn-primary" ng-click="showMap()">Search</button>
       </span>
     </p>
   </form>
