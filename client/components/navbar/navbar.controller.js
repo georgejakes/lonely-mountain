@@ -3,7 +3,7 @@
 angular.module('lmApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'Search',
       'link': '/'
     }];
 
