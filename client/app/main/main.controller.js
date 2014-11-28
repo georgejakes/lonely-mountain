@@ -3,12 +3,9 @@
 angular.module('lmApp')
   .controller('MainCtrl', function ($scope, $http, socket, uiGmapGoogleMapApi) {
     $scope.awesomeThings = [];
+
     uiGmapGoogleMapApi.then(function(maps){
       $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-    });
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-      socket.syncUpdates('thing', $scope.awesomeThings);
     });
 
     $scope.showMap = function() {
@@ -19,6 +16,13 @@ angular.module('lmApp')
       // animate and hide map
       $('#banner').animate({'opacity':1});
     };
+    
+    // Kept for references can be deleted later
+
+    $http.get('/api/things').success(function(awesomeThings) {
+      $scope.awesomeThings = awesomeThings;
+      socket.syncUpdates('thing', $scope.awesomeThings);
+    });
     $scope.addThing = function() {
       if($scope.newThing === '') {
         return;
